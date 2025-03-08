@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Deploy to AWS
           command: |
-            ssh -i your-ssh-key.pem ec2-user@your-ec2-ip "cd SimpleApplication && git pull && python app.py"
+            ssh -i /c/Users/Ana/Desktop/CA_DEV/devops-ec-access.pem ec2-user@SEU_IP_PUBLICO "cd SimpleApplication && git pull && python app.py"
       - run:
             name: Install dependencies
             command: pip install -r ./requirements.txt          
