@@ -1,19 +1,19 @@
 #!/bin/bash
 
-# Habilita saída de erro
+# Enable error handling
 set -e
 
-echo "Configurando chaves SSH..."
+echo "Configuring SSH keys..."
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
 
-# Criar chave privada a partir da variável do CircleCI
+# Create private key from CircleCI environment variable
 echo "$PRIVATE_KEY" > ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa
 
-# Adicionar a chave do servidor ao known_hosts
+# Add the server key to known_hosts
 echo "$SERVER_KEY" > ~/.ssh/known_hosts
 
-echo "Fazendo deploy no servidor..."
-ssh -i ~/.ssh/id_rsa user@server "cd /caminho/do/projeto && git pull ori
+echo "Deploying to the server..."
+ssh -i ~/.ssh/id_rsa ana@34.245.108.72 "C:\Users\Ana\Desktop\CA_DEV\SimpleApplication && git pull origin main && npm starth"
 
