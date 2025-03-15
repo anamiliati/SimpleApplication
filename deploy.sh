@@ -8,5 +8,7 @@ sudo pm2 stop simple_app
 cd SimpleApplication/
 # Install application dependencies
 sudo npm install
+echo $PRIVATE_KEY > privatekey.pem
+echo $SERVER > server.crt
 # Start the application with the process name simple_app using pm2
 pm2 start ./bin/www --name simple_app
