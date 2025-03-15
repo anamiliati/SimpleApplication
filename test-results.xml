@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-03-15T08:34:34" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Example Test" timestamp="2025-03-15T08:34:34" tests="1" file="C:\Users\Ana\Desktop\CA_DEV\SimpleApplication\test\example.test.js" time="0.0000" failures="0">
+    <testcase name="Example Test should pass" time="0.0000" classname="should pass">
+    </testcase>
+  </testsuite>
+</testsuites>
